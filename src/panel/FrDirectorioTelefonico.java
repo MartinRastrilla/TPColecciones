@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpcolecciones;
+package panel;
 
 import java.awt.Component;
 import java.util.HashMap;
@@ -64,7 +64,6 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         buttAggClient.setBackground(new java.awt.Color(0, 51, 51));
         buttAggClient.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         buttAggClient.setForeground(new java.awt.Color(255, 255, 255));
-        buttAggClient.setIcon(new javax.swing.ImageIcon("C:\\Users\\Martin\\Downloads\\usuario (1).png")); // NOI18N
         buttAggClient.setText("Agregar Cliente/s");
         buttAggClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +74,6 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         buttBuscarClient.setBackground(new java.awt.Color(0, 51, 51));
         buttBuscarClient.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         buttBuscarClient.setForeground(new java.awt.Color(255, 255, 255));
-        buttBuscarClient.setIcon(new javax.swing.ImageIcon("C:\\Users\\Martin\\Downloads\\buscar.png")); // NOI18N
         buttBuscarClient.setText("Buscar Cliente/s");
         buttBuscarClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +84,6 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         buttBorrarClient.setBackground(new java.awt.Color(0, 51, 51));
         buttBorrarClient.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         buttBorrarClient.setForeground(new java.awt.Color(255, 255, 255));
-        buttBorrarClient.setIcon(new javax.swing.ImageIcon("C:\\Users\\Martin\\Downloads\\remove-user.png")); // NOI18N
         buttBorrarClient.setText("Borrar Cliente/s");
         buttBorrarClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +94,6 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         buttSalir.setBackground(new java.awt.Color(0, 51, 51));
         buttSalir.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         buttSalir.setForeground(new java.awt.Color(255, 255, 255));
-        buttSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Martin\\Downloads\\salida-de-emergencia.png")); // NOI18N
         buttSalir.setText("Salir");
         buttSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,7 +104,6 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Martin\\Downloads\\letra-c (1).png")); // NOI18N
         jLabel1.setText("2022-2022 Grupo 6 - All rights reserved");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -116,19 +111,13 @@ public class FrDirectorioTelefonico extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(buttAggClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(buttBuscarClient, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(buttBorrarClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(txtFormDirectorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(buttAggClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttBuscarClient, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttBorrarClient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtFormDirectorio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(221, 221, 221)

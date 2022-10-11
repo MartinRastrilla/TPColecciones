@@ -1,4 +1,4 @@
-package tpcolecciones;
+package panel;
 
 
 public class Cliente {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpcolecciones;
+package panel;
 
 import javax.swing.JOptionPane;
 
@@ -37,7 +37,12 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
         butBuscar = new javax.swing.JButton();
         txtNombre = new javax.swing.JLabel();
         tf_nombre = new javax.swing.JTextField();
-        jtxtFNombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JLabel();
+        tf_Apellido = new javax.swing.JTextField();
+        txtCiudad = new javax.swing.JLabel();
+        tf_Ciuad = new javax.swing.JTextField();
+        txtDNI = new javax.swing.JLabel();
+        tf_DNI = new javax.swing.JTextField();
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 51));
         jPanel1.setForeground(new java.awt.Color(0, 51, 51));
@@ -89,9 +94,39 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
             }
         });
 
-        jtxtFNombre.addActionListener(new java.awt.event.ActionListener() {
+        txtApellido.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        txtApellido.setForeground(new java.awt.Color(255, 255, 255));
+        txtApellido.setText("Apellido:");
+
+        tf_Apellido.setBackground(new java.awt.Color(0, 153, 153));
+        tf_Apellido.setForeground(new java.awt.Color(51, 51, 51));
+        tf_Apellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtFNombreActionPerformed(evt);
+                tf_ApellidoActionPerformed(evt);
+            }
+        });
+
+        txtCiudad.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        txtCiudad.setForeground(new java.awt.Color(255, 255, 255));
+        txtCiudad.setText("Ciudad:");
+
+        tf_Ciuad.setBackground(new java.awt.Color(0, 153, 153));
+        tf_Ciuad.setForeground(new java.awt.Color(51, 51, 51));
+        tf_Ciuad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_CiuadActionPerformed(evt);
+            }
+        });
+
+        txtDNI.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        txtDNI.setForeground(new java.awt.Color(255, 255, 255));
+        txtDNI.setText("DNI:");
+
+        tf_DNI.setBackground(new java.awt.Color(0, 153, 153));
+        tf_DNI.setForeground(new java.awt.Color(51, 51, 51));
+        tf_DNI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_DNIActionPerformed(evt);
             }
         });
 
@@ -106,6 +141,18 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_DNI, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_Ciuad, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tf_Apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(butVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -116,9 +163,7 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(tf_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 193, Short.MAX_VALUE)
-                                    .addComponent(jtxtFNombre))))
+                                .addComponent(tf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addComponent(butBuscar)))
                 .addContainerGap(17, Short.MAX_VALUE))
@@ -137,9 +182,19 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
-                .addComponent(jtxtFNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_Apellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_Ciuad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tf_DNI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addComponent(butVolver)
                 .addContainerGap())
         );
@@ -162,7 +217,9 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
         try {
             Cliente cliente = FrDirectorioTelefonico.directorio.buscarCliente(tf_telefono.getText());
             tf_nombre.setText(cliente.getNombre());
-            jtxtFNombre.setText(cliente.getNombre());
+            tf_Apellido.setText(cliente.getApellido());
+            tf_Ciuad.setText(cliente.getCiudad());
+            tf_DNI.setText(String.valueOf(cliente.getDni()));
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error");
         }
@@ -180,19 +237,32 @@ public class Fri_BuscarCliente extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_nombreActionPerformed
 
-    private void jtxtFNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtFNombreActionPerformed
+    private void tf_ApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_ApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtFNombreActionPerformed
+    }//GEN-LAST:event_tf_ApellidoActionPerformed
+
+    private void tf_CiuadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_CiuadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_CiuadActionPerformed
+
+    private void tf_DNIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_DNIActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_DNIActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton butBuscar;
     private javax.swing.JButton butVolver;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jtxtFNombre;
+    private javax.swing.JTextField tf_Apellido;
+    private javax.swing.JTextField tf_Ciuad;
+    private javax.swing.JTextField tf_DNI;
     private javax.swing.JTextField tf_nombre;
     private javax.swing.JTextField tf_telefono;
+    private javax.swing.JLabel txtApellido;
     private javax.swing.JLabel txtBuscarCliente;
+    private javax.swing.JLabel txtCiudad;
+    private javax.swing.JLabel txtDNI;
     private javax.swing.JLabel txtNombre;
     private javax.swing.JLabel txtTelefono;
     // End of variables declaration//GEN-END:variables

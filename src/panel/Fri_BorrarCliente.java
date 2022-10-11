@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tpcolecciones;
+package panel;
 
 /**
  *
@@ -131,6 +131,11 @@ public class Fri_BorrarCliente extends javax.swing.JInternalFrame {
 
         butBorrar.setBackground(new java.awt.Color(0, 51, 51));
         butBorrar.setText("Borrar");
+        butBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butBorrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -257,6 +262,10 @@ public class Fri_BorrarCliente extends javax.swing.JInternalFrame {
     private void butVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butVolverActionPerformed
         dispose();
     }//GEN-LAST:event_butVolverActionPerformed
+
+    private void butBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butBorrarActionPerformed
+        FrDirectorioTelefonico.directorio.borrarCliente(tf_Telefono.getText());
+    }//GEN-LAST:event_butBorrarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

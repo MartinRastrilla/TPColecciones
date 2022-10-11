@@ -1,4 +1,4 @@
-package tpcolecciones;
+package panel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
